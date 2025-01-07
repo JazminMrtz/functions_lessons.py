@@ -1,34 +1,103 @@
-# Methods, Help & Documentation Practice #1
-# Remove the characters to the left of our main text:
+# functions are ways to wrap your code
+# into reusable units
+# -----------------------------------------------------------
+# how to define a function
+# I only define a function ONCE!!!!
 
-# ,
+# def sayHello():
+#     print("say hello")
+#     print("Hello Governer")
+#     print("Welcome back")
 
-# :
+# once you define a function
+# you must call or invoke the function
+# sayHello()
 
-# %
+# -----------------------------------------------------------
+# whatever I pass inside the parentheses
+# # is called a paramater
+# # parameter is a placeholder for future information
+# def sayHello(name,age,food):
+#     print(f"say hello {name}")
+#     print("Hello Governer")
+#     print(f"Welcome back {name}")
+#     print(f"your age is {age}")
+#     print(f"Your favorite food is {food}")
 
-# _
+# # when I pass in information into the
+# # the callled function, its called an argument
+# sayHello("jazmin",16,"pizza")
+# sayHello("Lesly",15,"pasta")
+# # sayHello("Cristal",15,"tacos")
 
-# #
+# -----------------------------------------------------------
 
-# Use the lstrip() method. Print the result to the screen:
+# def determinEligibility():
+#     # if your age is over 18, you can vote
+#     # otherwise, you can't
+#     if age >= 18:
+#         print("You can vote.")
+#     else:
+#         print("You have to wait.")
 
-# ",:_#,,,,,,:::____##Total_ _Pyt%on,,,,,,::#"
+# determinEligibility(12)
+# # determinEligibility(15)
+# # determinEligibility(19)
 
-# Search the documentation for the requested method to learn how it works. You can use intermediate variables if you need them.
+# -----------------------------------------------------------
+
+# def WillYouGraduate(gpa,credits,SAT):
+#     # gpa: number float variable
+#     # credits: number variable
+#     # passed SAT: boolean
+#     if (gpa==3.0) and (credits>=28) and (SAT == True):
+#         print("You passed. Good luck in college.")
+    
+#     elif(gpa<3.0) or (credits<28) or (SAT != True):
+#         print("Back to the drawing board")
+#     else:
+#         print("Talk to your counselor")
+    
+# WillYouGraduate(2.8,15,True)
+# WillYouGraduate(3.8,28,True)
+# WillYouGraduate(2.9,10,False)
+
+# -----------------------------------------------------------
 
 
-# Methods, Help & Documentation Practice #2
-# Add the element "orange" as the fourth element of the following list fruits, using the insert() method:
 
-# fruits = ["mango", "banana", "cherry", "plum", "grapefruit"]
+# video
 
-# Search the documentation for the requested method to know how it works.
 
-# Methods, Help & Documentation Practice #3
-# Check if the sets below are isolated (that is, they have no elements in common), using the isdisjoint() method. Store this result in the isolated_sets variable:
 
-# phone_brands = {"Samsung", "Xiaomi", "Apple", "Huawei", "LG"}
-# tv_brands = {"Sony", "Philips", "Samsung", "LG"}
-# Search the documentation for the requested method to know how it works.
+# # return = statement used to end a function and send a result back to the caller
 
+# z = 3 
+# def add(x,y):
+#     z = x + y 
+#     return z
+
+# def subtract(x,y):
+#     z = x - y
+#     return z
+
+# def multiply(x,y):
+#     z = x*y
+#     return z
+
+# def divide(x,y):
+#     z  = x/y
+#     return z 
+
+# print(add(1,2))
+# print(subtract(1,2))
+# print(multiply(1,2))
+# print(divide(1,2))
+
+def create_name(first,last):
+    first = first.capitalize()
+    last = last.capitalize
+    return first + " " + last
+
+full_name = create_name("spongebob","squarepants")
+print(full_name)
